@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/f38f91cb48.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    
+    <title>Landing page</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Screenshot 2024-05-07 191432.png" class="logo">
+            <ul>
+                <li><a href ="#">Home</a></li>
+                <li><a href ="#">About</a></li>
+                <li><a href ="#">Skills</a></li>
+                <li><a href ="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="header-text">
+    <h1>Hola!</h1>
+    <p>I'M A <span>FRONTEND DEVELOPER</span></p>
+    <button id="CV">Download CV</button>
+    <button id="Explore">Explore More</button>
+</div>
+<div class="animation">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/edc4a36b-790d-4734-93bf-25802b522235/s0jyViwCqZ.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+</div>
+
+
+<!--About-->
+<div class="about">
+    <div class="col-one">
+        <div id="box">
+            <div id="about-text">About Me</div>
+            <div id="purplebox"><p>Meenal Singh</div>
+                <div> <span id="title">A frontend Developer</span></div>
+                <div id="paragraph"><span id ="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </span><span id="colored">reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</span></div>
+        </div>
+    </div>
+
+    <div class="col-two">
+        <h1 class="subtitle">Way more about me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links " onclick="opentab('Education')">Education</p>
+                <p class="tab-links" onclick="opentab('Extra')">Extra</p>
+            </div>
+            <div class="tab-content active-content" id="skills">
+                <ul>
+                    <li><span>Languages</span><br>Python, C/C++</li>
+                    <li><span>Frontend</span><br>HTML, CSS, JavaScript, ReactJS</li>
+                    <li><span>Domain of Interest</span><br>UI/UX designing, Web development, Artificial Intelligence, Machine Learning</li>
+
+                </ul>
+
+            </div>
+            <div class="tab-content " id="Education">
+                <ul>
+                    <li><span>University</span><br>ECE, Dayanand Sagar College of engineering</li>
+                    <li><span>12th</span><br>Kendriya Vidyalaya Hebbal</li>
+                    <li><span>10th</span><br>Kendriya Vidyalaya Sulur</li>
+
+                </ul>
+
+            </div>
+            <div class="tab-content" id="Extra">
+                <ul>
+                    <li><span>Talents</span><br>Procastinates, Sleeps, Sometimes has 3 working braincells</li>
+                    <li><span>Honourable mention</span><br>No real skills</li>
+                    <li><span>Future scope</span><br>Would likely kill herself</li>
+
+                </ul>
+
+            </div>
+    </div>
+</div>
+
+
+
+<!---Skills-->
+<div id="projects">
+    <div class="container">
+        <div class="grey">
+        <h1 class="subtitle">Projects</h1>
+    </div>
+        <div class="tab-switcher">
+            <button>All</button>
+            <button>Python</button>
+            <button>Dev</button>
+            <button>AI</button>
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="cards-column">
+            <div class="card one">
+                <div class="card-content">
+                  <div class="card-title"><i class="fa-brands fa-html5 fa-2xl"></i>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <i class="fa-brands fa-js fa-2xl"></i></div>
+                  <p class="card-description">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <button class="card-button">Learn More</button>
+                </div>
+              </div>
+              <div class="card one">
+                <div class="card-content">
+                  <div class="card-title"><i class="fa-solid fa-square-virus fa-2xl"></i></div>
+                  <p class="card-description">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  <button class="card-button">Learn More</button>
+                </div>
+              </div>
+              <div class="card one">
+                <div class="card-content">
+                  <div class="card-title"><i class="fa-brands fa-python fa-2xl"></i></div>
+                  <p class="card-description">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  <button class="card-button">Learn More</button>
+                </div>
+              </div>
+              <div class="card one">
+                <div class="card-content">
+                  <div class="card-title"><i class="fa-brands fa-html5 fa-2xl"></i>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <i class="fa-brands fa-js fa-2xl"></i></div>
+                  <p class="card-description">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <button class="card-button">Learn More</button>
+                </div>
+              </div>
+              <div class="card one">
+                <div class="card-content">
+                  <div class="card-title"><i class="fa-brands fa-html5 fa-2xl"></i>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <i class="fa-brands fa-js fa-2xl"></i></div>
+                  <p class="card-description">TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <button class="card-button">Learn More</button>
+                </div>
+              </div>
+
+        </div>     
+    </section>
+</div>
+<!---contact me-->
+
+<div class="contact">
+    <div class="contact-left">
+        <h1>Get In Touch!</h1>
+        <div class="contact-bottom">
+            <ul>
+                <li><span>Phone No.</span><br>+91 8971817775</li>
+                <li><span>Email</span><br>@meenals250@gmail.com</li>
+                <li><span>Location</span><br>Bangalore,India</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="contact-right">
+        <div class="contact-form">
+        <form action="/action_page.php">
+          <label for="fname" name="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname" name="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="lname" name="lname">Email</label>
+          <input type="text" id="Email" name="lastname" placeholder="Your Email Id">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+</div>
+<footer>
+  <div class="end">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
+
+  
+   
